@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>"MODULE NEWRECPLAY" 02-MAR-25 1611 (RENAMING ELEMENTS)</title>
+<!-- STYLECHANGE @LINE ##44## -->
+    <link href="./newrecplay.css" rel="stylesheet" type="text/css">
+  </head>
+
+<!-- (!) INIT CREATES AUDIOCTX IN CASE AUDIO-TEMPLATE HAS NOT BEEN PLAYED -->
+	<body onload="init();">
+
+<!-- WRAPPER -->
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+	<div class="wrapper">
+
+
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+<!-- BUTTONS -->
+		<section>
+			<div id="buttons">
+
+<!-- ADDED WEBAUDIO -->
+				<audio src="audiotemplate.mp3" type="audio/mpeg">
+				</audio>
+				<button data-playing="false" id="btnaudiostart" role="switch" aria-checked="false" class="btnaudiostart">Listen</button>
+				<button id="btnstartrecording" class="btnstartrecording">Start REC</button>
+				<button id="btnstoprecording" class="btnstoprecording">Stop REC</button>
+				<button id="btnplayrecording" class="btnplayrecording">Play REC</button>
+			</div>
+		</section>
+
+
+
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+<!-- INPUT LIVE LEVEL -->
+		<div id="inputlevelcontainer" class="inputlevelcontainer">
+			<div id="inputlevelbar" class="inputlevelbar"></div>
+		</div>
+
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+<!-- SCRUBBER // LINE ##44## -->
+			<div id="recscrubbercontainer" class="recscrubbercontainer">
+  			<div id="recscrubberbar" class="recscrubberbar"></div>
+			</div>
+
+
+<!-- DATALOG -->
+		<section>
+			<div id="datalog">
+				<!-- LOG TO SCREEN -->
+				<!-- ##LOGGING DIS-FUNCTIONAL## -->
+				<!-- TXT TIME/DUR/AMP REMOVED -->
+					<pre id="logtime"></pre>
+					<pre id="logdur"></pre>
+					<pre id="logamp"></pre>
+			</div>
+		</section>
+
+
+
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+<!-- DOWNLOAD -->
+	<section>
+		<div>
+			<button id="btndownload" class="btndownload">Download REC</button>
+		</div>
+	</section>
+		<section>
+		<div>
+			<button id="btnresetrec" class="btnresetrec">RESET REC</button>
+		</div>
+	</section>
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+
+	</div>
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+<!-- –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  –––––––––––  ––––––––––– -->
+	<!-- END WRAPPER -->
+
+																<!-- /!\ KEEP THIS SEQUENCE -->
+	<script src="./newwebaudio.js"></script>
+	<script src="./newrecplay.js"></script>
+	<script src="./newscrub.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,147 @@
+/* MERGE ELEM-NAMES WITH PIPELINE "HIRA" // 02-MAR-25 1544 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.8rem;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* LOG DISPLAY */
+#datalog { /* AKA "DATALOG" */
+	margin-left: 5px;
+	margin-top: 25px;
+}
+pre {
+	font-family: "Menlo";
+	font-size: 14px;
+	line-height: 22px;
+  color: rgba(0 0 0 / .33);
+}
+
+#controls {
+   width: 100px;
+   float: left;
+}
+
+
+
+																			/* SCRUBBER TEMPLATE *
+/* TBD IN DIV "SEGMENTLISTEN" */
+/*
+.audiotemplatecontainer {}
+.audiotemplatetrack {}
+*/
+
+
+																			/* SCRUBBER RECORDING *
+/* IN DIV "SEGMENTSPEAK" */
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* OLD // ... // NEW "recscrubbercontainer"  */
+#recscrubbercontainer {
+   margin-left: 10px;
+   margin-right: 10px;
+   border: 1px solid hsla(190 100% 50% / 1);
+   cursor: pointer;
+}
+/* OLD // ... // NEW "recscrubberbar"  */
+#recscrubberbar {
+	height: 100px;
+	background-color: hsla(190 100% 50% / 1);
+}
+
+
+																					/* RECORDER */
+/* IN DIV "SEGMENTSPEAK" */
+/* OLD // ... // NEW "inputlevelcontainer"  */
+.inputlevelcontainer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+  width: 100%;
+  display: block;
+}
+
+/* OLD // ... // NEW "inputlevelbar"  */
+.inputlevelbar {
+  height: 50px;
+	background-color: hsla(60 100% 50% / 1);
+}
+
+
+
+
+																		/* BUTTONS (RECPLAY) */
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button {
+  width: calc(25% - 0.25rem);
+  height: 100px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  border: none;
+  transition: all 0.2s;
+  padding: 0.5rem;
+}
+button:active {
+  transform: translateY(5px);	 /*"DOWN"-STATE*/
+}
+
+/* IN DIV "SEGMENTLISTEN" */
+/* OLD // "btnlisten" // NEW "btnaudiostart"  */
+.btnaudiostart {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+/* IN DIV "SEGMENTSPEAK" */
+/* OLD // "btnstartrec" // NEW "btnstartrecording"  */
+.btnstartrecording {
+  background: rgba(255, 0, 0, 0.5);
+}
+/* OLD // "btnstoprec" // NEW "btnstoprecording"  */
+.btnstoprecording {
+  background: rgba(100, 100, 100, 0.5);
+}
+/* OLD // "btnplayrec" // NEW "btnplayrecording"  */
+.btnplayrecording {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+/* (DEFAULT SCRIPTED PROMPT) */
+.btndownload {
+	background: rgba(255, 100, 255, 0.5);
+}
+/* ##TBD## KILL BLOB NEW AUDIO_CTX */
+.btnresetrec {
+	margin-top: 5px;
+	background: rgba(200, 200, 200, 1);
+}
+
+
+
+a {
+	color: rgba(0 0 0 / .33);
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(0 0 0 / 1);
+}
+
+
+
