@@ -7,8 +7,9 @@ Allow use of the microphone in the browser pop-up ...<br>
 • "PlayREC" to listen to your recording<br>
 (repeat StartREC to overwrite your previous recording)<br>
 &nbsp;<br>
-Yellow bar visualizes amplitude (volume) of recording.<br>
-Blue bar represents the recorded audio track.<br>
+Yellow bar visualizes input level (volume).<br>
+Blue bar represents the recorded audio track – after(!) first recording.<br>
+&nbsp;<br>
 Move your finger (touchscreen) or drag pointer on the blue bar for synchronous playback ("scrubbing").<br>
 Recording can be saved with "Download REC" (.ogg file)<br>
 &nbsp;<br>
