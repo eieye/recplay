@@ -1,6 +1,7 @@
 # Experimental Rec(order)Play(er) with MediaStream Recording API<br>
-Allow use of the microphone in the browser pop-up ...<br>
+(loosely based on "Web Dictaphone" https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API/Using_the_MediaStream_Recording_API)<br>
 &nbsp;<br>
+Allow use of the microphone in the browser pop-up ...<br>
 • "Listen" to hear audio template/prompt<br>
 • "StartREC" to record yourself repeating the prompt<br>
 • "StopREC" when your done<br>
